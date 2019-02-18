@@ -26,9 +26,9 @@ For example, consider 3 orders: A, B, and C. A and B arrive to the factory early
 The SOURCE, MAKE, and DELIVER steps all have these deadlines. PLANNING does not. Assume that if the order meets all its deadlines, but is still late, then it operated under a bad PLAN. Note that the deadlines are independent for each step; meaning, if an order is already late to the factory, it still gets sufficient time to be processed. A step won’t be penalized for an upstream delay.
 SOURCE deadlines are measured in minutes. 
 MAKE deadlines are measured in hours.
-DELIVER deadlines are measured in days.
-Most of the order attribute fields are self-explanatory. Below is more detail on a few of them:
-•	facility: location where the customization occurs and shipment originates
+DELIVER deadlines are measured in days.<br>
+Most of the order attribute fields are self-explanatory. Below is more detail on a few of them:<br>
+•	facility: location where the customization occurs and shipment originates<br>
 •	shipping_method and transit_days: the shipping method the customer requested. Next Day, 2-Day, and 3-Day take 1, 2, and 3 business days respectively; Ground is dependent on the customer location, and takes the amount of business days in transit_days to reach the customer.
 •	returned: the order was ultimately returned; the timestamps reflect the initial delivery of the product to the consumer (not the return flow)
 •	backordered: an item in the order needs to be sourced from an off-premises supplier location, which usually takes longer. This exception does not get factored into the planned delivery date.
